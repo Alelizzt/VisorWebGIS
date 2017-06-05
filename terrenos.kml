@@ -1,287 +1,1086 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <kml xmlns="http://www.opengis.net/kml/2.2" xmlns:ns2="http://www.google.com/kml/ext/2.2" xmlns:ns3="http://www.w3.org/2005/Atom" xmlns:ns4="urn:oasis:names:tc:ciq:xsdschema:xAL:2.0">
     <Document>
-        <Schema name="terrenos_1" id="terrenos_1">
-            <SimpleField type="string" name="name"/>
-        </Schema>
+        <LookAt>
+            <longitude>-74.40584639209851</longitude>
+            <latitude>5.296258741113718</latitude>
+            <altitude>1487.3081704284116</altitude>
+            <heading>0.0</heading>
+            <tilt>0.0</tilt>
+            <range>1201.8230135039666</range>
+            <altitudeMode>clampToGround</altitudeMode>
+        </LookAt>
         <Folder>
-            <name>terrenos</name>
+            <name>municipios:terrenos</name>
+            <LookAt>
+                <longitude>-74.40584639209851</longitude>
+                <latitude>5.296258741113718</latitude>
+                <altitude>1487.3081704284116</altitude>
+                <heading>0.0</heading>
+                <tilt>0.0</tilt>
+                <range>1201.8230135039666</range>
+                <altitudeMode>clampToGround</altitudeMode>
+            </LookAt>
             <Placemark id="terrenos.1">
-                <ExtendedData>
-                    <SchemaData schemaUrl="#terrenos_1">
-                        <SimpleData name="name">Santa Lucia</SimpleData>
-                    </SchemaData>
-                </ExtendedData>
+                <name>terrenos.1</name>
+                <description>&lt;h4&gt;terrenos&lt;/h4&gt;
+
+&lt;ul class="textattributes"&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class="atr-name"&gt;name&lt;/span&gt;:&lt;/strong&gt; &lt;span class="atr-value"&gt;Santa Lucia&lt;/span&gt;&lt;/li&gt;
+
+&lt;/ul&gt;
+</description>
+                <LookAt>
+                    <longitude>-74.40779966999997</longitude>
+                    <latitude>5.293343649999997</latitude>
+                    <altitude>0.0</altitude>
+                    <heading>0.0</heading>
+                    <tilt>0.0</tilt>
+                    <range>0.0</range>
+                    <altitudeMode>clampToGround</altitudeMode>
+                </LookAt>
+                <Style>
+                    <IconStyle>
+                        <scale>0.375</scale>
+                        <heading>0.0</heading>
+                        <Icon>
+                            <href>http://localhost:8080/geoserver/kml/icon/point?0.0.0=</href>
+                            <refreshInterval>0.0</refreshInterval>
+                            <viewRefreshTime>0.0</viewRefreshTime>
+                            <viewBoundScale>0.0</viewBoundScale>
+                        </Icon>
+                    </IconStyle>
+                    <LabelStyle>
+                        <color>00ffffff</color>
+                        <scale>0.0</scale>
+                    </LabelStyle>
+                </Style>
                 <Point>
                     <coordinates>-74.40779967,5.29334365,1489.0</coordinates>
                 </Point>
             </Placemark>
             <Placemark id="terrenos.2">
-                <ExtendedData>
-                    <SchemaData schemaUrl="#terrenos_1">
-                        <SimpleData name="name">Tudelita</SimpleData>
-                    </SchemaData>
-                </ExtendedData>
+                <name>terrenos.2</name>
+                <description>&lt;h4&gt;terrenos&lt;/h4&gt;
+
+&lt;ul class="textattributes"&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class="atr-name"&gt;name&lt;/span&gt;:&lt;/strong&gt; &lt;span class="atr-value"&gt;Tudelita&lt;/span&gt;&lt;/li&gt;
+
+&lt;/ul&gt;
+</description>
+                <LookAt>
+                    <longitude>-74.41032855</longitude>
+                    <latitude>5.29489562000002</latitude>
+                    <altitude>0.0</altitude>
+                    <heading>0.0</heading>
+                    <tilt>0.0</tilt>
+                    <range>0.0</range>
+                    <altitudeMode>clampToGround</altitudeMode>
+                </LookAt>
+                <Style>
+                    <IconStyle>
+                        <scale>0.375</scale>
+                        <heading>0.0</heading>
+                        <Icon>
+                            <href>http://localhost:8080/geoserver/kml/icon/point?0.0.0=</href>
+                            <refreshInterval>0.0</refreshInterval>
+                            <viewRefreshTime>0.0</viewRefreshTime>
+                            <viewBoundScale>0.0</viewBoundScale>
+                        </Icon>
+                    </IconStyle>
+                    <LabelStyle>
+                        <color>00ffffff</color>
+                        <scale>0.0</scale>
+                    </LabelStyle>
+                </Style>
                 <Point>
                     <coordinates>-74.41032855,5.29489562,1505.0</coordinates>
                 </Point>
             </Placemark>
             <Placemark id="terrenos.3">
-                <ExtendedData>
-                    <SchemaData schemaUrl="#terrenos_1">
-                        <SimpleData name="name">Santa Lucia</SimpleData>
-                    </SchemaData>
-                </ExtendedData>
+                <name>terrenos.3</name>
+                <description>&lt;h4&gt;terrenos&lt;/h4&gt;
+
+&lt;ul class="textattributes"&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class="atr-name"&gt;name&lt;/span&gt;:&lt;/strong&gt; &lt;span class="atr-value"&gt;Santa Lucia&lt;/span&gt;&lt;/li&gt;
+
+&lt;/ul&gt;
+</description>
+                <LookAt>
+                    <longitude>-74.40971832</longitude>
+                    <latitude>5.294995970000002</latitude>
+                    <altitude>0.0</altitude>
+                    <heading>0.0</heading>
+                    <tilt>0.0</tilt>
+                    <range>0.0</range>
+                    <altitudeMode>clampToGround</altitudeMode>
+                </LookAt>
+                <Style>
+                    <IconStyle>
+                        <scale>0.375</scale>
+                        <heading>0.0</heading>
+                        <Icon>
+                            <href>http://localhost:8080/geoserver/kml/icon/point?0.0.0=</href>
+                            <refreshInterval>0.0</refreshInterval>
+                            <viewRefreshTime>0.0</viewRefreshTime>
+                            <viewBoundScale>0.0</viewBoundScale>
+                        </Icon>
+                    </IconStyle>
+                    <LabelStyle>
+                        <color>00ffffff</color>
+                        <scale>0.0</scale>
+                    </LabelStyle>
+                </Style>
                 <Point>
                     <coordinates>-74.40971832,5.29499597,1497.0</coordinates>
                 </Point>
             </Placemark>
             <Placemark id="terrenos.4">
-                <ExtendedData>
-                    <SchemaData schemaUrl="#terrenos_1">
-                        <SimpleData name="name">Santa Lucia</SimpleData>
-                    </SchemaData>
-                </ExtendedData>
+                <name>terrenos.4</name>
+                <description>&lt;h4&gt;terrenos&lt;/h4&gt;
+
+&lt;ul class="textattributes"&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class="atr-name"&gt;name&lt;/span&gt;:&lt;/strong&gt; &lt;span class="atr-value"&gt;Santa Lucia&lt;/span&gt;&lt;/li&gt;
+
+&lt;/ul&gt;
+</description>
+                <LookAt>
+                    <longitude>-74.40887785000001</longitude>
+                    <latitude>5.294708789999987</latitude>
+                    <altitude>0.0</altitude>
+                    <heading>0.0</heading>
+                    <tilt>0.0</tilt>
+                    <range>0.0</range>
+                    <altitudeMode>clampToGround</altitudeMode>
+                </LookAt>
+                <Style>
+                    <IconStyle>
+                        <scale>0.375</scale>
+                        <heading>0.0</heading>
+                        <Icon>
+                            <href>http://localhost:8080/geoserver/kml/icon/point?0.0.0=</href>
+                            <refreshInterval>0.0</refreshInterval>
+                            <viewRefreshTime>0.0</viewRefreshTime>
+                            <viewBoundScale>0.0</viewBoundScale>
+                        </Icon>
+                    </IconStyle>
+                    <LabelStyle>
+                        <color>00ffffff</color>
+                        <scale>0.0</scale>
+                    </LabelStyle>
+                </Style>
                 <Point>
                     <coordinates>-74.40887785,5.29470879,1492.0</coordinates>
                 </Point>
             </Placemark>
             <Placemark id="terrenos.5">
-                <ExtendedData>
-                    <SchemaData schemaUrl="#terrenos_1">
-                        <SimpleData name="name">Bellavista</SimpleData>
-                    </SchemaData>
-                </ExtendedData>
+                <name>terrenos.5</name>
+                <description>&lt;h4&gt;terrenos&lt;/h4&gt;
+
+&lt;ul class="textattributes"&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class="atr-name"&gt;name&lt;/span&gt;:&lt;/strong&gt; &lt;span class="atr-value"&gt;Bellavista&lt;/span&gt;&lt;/li&gt;
+
+&lt;/ul&gt;
+</description>
+                <LookAt>
+                    <longitude>-74.40814088000002</longitude>
+                    <latitude>5.295632920000003</latitude>
+                    <altitude>0.0</altitude>
+                    <heading>0.0</heading>
+                    <tilt>0.0</tilt>
+                    <range>0.0</range>
+                    <altitudeMode>clampToGround</altitudeMode>
+                </LookAt>
+                <Style>
+                    <IconStyle>
+                        <scale>0.375</scale>
+                        <heading>0.0</heading>
+                        <Icon>
+                            <href>http://localhost:8080/geoserver/kml/icon/point?0.0.0=</href>
+                            <refreshInterval>0.0</refreshInterval>
+                            <viewRefreshTime>0.0</viewRefreshTime>
+                            <viewBoundScale>0.0</viewBoundScale>
+                        </Icon>
+                    </IconStyle>
+                    <LabelStyle>
+                        <color>00ffffff</color>
+                        <scale>0.0</scale>
+                    </LabelStyle>
+                </Style>
                 <Point>
                     <coordinates>-74.40814088,5.29563292,1482.0</coordinates>
                 </Point>
             </Placemark>
             <Placemark id="terrenos.6">
-                <ExtendedData>
-                    <SchemaData schemaUrl="#terrenos_1">
-                        <SimpleData name="name">Santa Lucia</SimpleData>
-                    </SchemaData>
-                </ExtendedData>
+                <name>terrenos.6</name>
+                <description>&lt;h4&gt;terrenos&lt;/h4&gt;
+
+&lt;ul class="textattributes"&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class="atr-name"&gt;name&lt;/span&gt;:&lt;/strong&gt; &lt;span class="atr-value"&gt;Santa Lucia&lt;/span&gt;&lt;/li&gt;
+
+&lt;/ul&gt;
+</description>
+                <LookAt>
+                    <longitude>-74.40745873999998</longitude>
+                    <latitude>5.293914999999998</latitude>
+                    <altitude>0.0</altitude>
+                    <heading>0.0</heading>
+                    <tilt>0.0</tilt>
+                    <range>0.0</range>
+                    <altitudeMode>clampToGround</altitudeMode>
+                </LookAt>
+                <Style>
+                    <IconStyle>
+                        <scale>0.375</scale>
+                        <heading>0.0</heading>
+                        <Icon>
+                            <href>http://localhost:8080/geoserver/kml/icon/point?0.0.0=</href>
+                            <refreshInterval>0.0</refreshInterval>
+                            <viewRefreshTime>0.0</viewRefreshTime>
+                            <viewBoundScale>0.0</viewBoundScale>
+                        </Icon>
+                    </IconStyle>
+                    <LabelStyle>
+                        <color>00ffffff</color>
+                        <scale>0.0</scale>
+                    </LabelStyle>
+                </Style>
                 <Point>
                     <coordinates>-74.40745874,5.293915,1483.0</coordinates>
                 </Point>
             </Placemark>
             <Placemark id="terrenos.7">
-                <ExtendedData>
-                    <SchemaData schemaUrl="#terrenos_1">
-                        <SimpleData name="name">Las Juntas</SimpleData>
-                    </SchemaData>
-                </ExtendedData>
+                <name>terrenos.7</name>
+                <description>&lt;h4&gt;terrenos&lt;/h4&gt;
+
+&lt;ul class="textattributes"&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class="atr-name"&gt;name&lt;/span&gt;:&lt;/strong&gt; &lt;span class="atr-value"&gt;Las Juntas&lt;/span&gt;&lt;/li&gt;
+
+&lt;/ul&gt;
+</description>
+                <LookAt>
+                    <longitude>-74.40847955999999</longitude>
+                    <latitude>5.296065720000001</latitude>
+                    <altitude>0.0</altitude>
+                    <heading>0.0</heading>
+                    <tilt>0.0</tilt>
+                    <range>0.0</range>
+                    <altitudeMode>clampToGround</altitudeMode>
+                </LookAt>
+                <Style>
+                    <IconStyle>
+                        <scale>0.375</scale>
+                        <heading>0.0</heading>
+                        <Icon>
+                            <href>http://localhost:8080/geoserver/kml/icon/point?0.0.0=</href>
+                            <refreshInterval>0.0</refreshInterval>
+                            <viewRefreshTime>0.0</viewRefreshTime>
+                            <viewBoundScale>0.0</viewBoundScale>
+                        </Icon>
+                    </IconStyle>
+                    <LabelStyle>
+                        <color>00ffffff</color>
+                        <scale>0.0</scale>
+                    </LabelStyle>
+                </Style>
                 <Point>
                     <coordinates>-74.40847956,5.29606572,1468.0</coordinates>
                 </Point>
             </Placemark>
             <Placemark id="terrenos.8">
-                <ExtendedData>
-                    <SchemaData schemaUrl="#terrenos_1">
-                        <SimpleData name="name">Santa Lucia</SimpleData>
-                    </SchemaData>
-                </ExtendedData>
+                <name>terrenos.8</name>
+                <description>&lt;h4&gt;terrenos&lt;/h4&gt;
+
+&lt;ul class="textattributes"&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class="atr-name"&gt;name&lt;/span&gt;:&lt;/strong&gt; &lt;span class="atr-value"&gt;Santa Lucia&lt;/span&gt;&lt;/li&gt;
+
+&lt;/ul&gt;
+</description>
+                <LookAt>
+                    <longitude>-74.40677836999998</longitude>
+                    <latitude>5.2937276800000035</latitude>
+                    <altitude>0.0</altitude>
+                    <heading>0.0</heading>
+                    <tilt>0.0</tilt>
+                    <range>0.0</range>
+                    <altitudeMode>clampToGround</altitudeMode>
+                </LookAt>
+                <Style>
+                    <IconStyle>
+                        <scale>0.375</scale>
+                        <heading>0.0</heading>
+                        <Icon>
+                            <href>http://localhost:8080/geoserver/kml/icon/point?0.0.0=</href>
+                            <refreshInterval>0.0</refreshInterval>
+                            <viewRefreshTime>0.0</viewRefreshTime>
+                            <viewBoundScale>0.0</viewBoundScale>
+                        </Icon>
+                    </IconStyle>
+                    <LabelStyle>
+                        <color>00ffffff</color>
+                        <scale>0.0</scale>
+                    </LabelStyle>
+                </Style>
                 <Point>
                     <coordinates>-74.40677837,5.29372768,1438.0</coordinates>
                 </Point>
             </Placemark>
             <Placemark id="terrenos.9">
-                <ExtendedData>
-                    <SchemaData schemaUrl="#terrenos_1">
-                        <SimpleData name="name">Santa Lucia</SimpleData>
-                    </SchemaData>
-                </ExtendedData>
+                <name>terrenos.9</name>
+                <description>&lt;h4&gt;terrenos&lt;/h4&gt;
+
+&lt;ul class="textattributes"&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class="atr-name"&gt;name&lt;/span&gt;:&lt;/strong&gt; &lt;span class="atr-value"&gt;Santa Lucia&lt;/span&gt;&lt;/li&gt;
+
+&lt;/ul&gt;
+</description>
+                <LookAt>
+                    <longitude>-74.40641373</longitude>
+                    <latitude>5.293271730000015</latitude>
+                    <altitude>0.0</altitude>
+                    <heading>0.0</heading>
+                    <tilt>0.0</tilt>
+                    <range>0.0</range>
+                    <altitudeMode>clampToGround</altitudeMode>
+                </LookAt>
+                <Style>
+                    <IconStyle>
+                        <scale>0.375</scale>
+                        <heading>0.0</heading>
+                        <Icon>
+                            <href>http://localhost:8080/geoserver/kml/icon/point?0.0.0=</href>
+                            <refreshInterval>0.0</refreshInterval>
+                            <viewRefreshTime>0.0</viewRefreshTime>
+                            <viewBoundScale>0.0</viewBoundScale>
+                        </Icon>
+                    </IconStyle>
+                    <LabelStyle>
+                        <color>00ffffff</color>
+                        <scale>0.0</scale>
+                    </LabelStyle>
+                </Style>
                 <Point>
                     <coordinates>-74.40641373,5.29327173,1457.0</coordinates>
                 </Point>
             </Placemark>
             <Placemark id="terrenos.10">
-                <ExtendedData>
-                    <SchemaData schemaUrl="#terrenos_1">
-                        <SimpleData name="name">Santa Lucia</SimpleData>
-                    </SchemaData>
-                </ExtendedData>
+                <name>terrenos.10</name>
+                <description>&lt;h4&gt;terrenos&lt;/h4&gt;
+
+&lt;ul class="textattributes"&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class="atr-name"&gt;name&lt;/span&gt;:&lt;/strong&gt; &lt;span class="atr-value"&gt;Santa Lucia&lt;/span&gt;&lt;/li&gt;
+
+&lt;/ul&gt;
+</description>
+                <LookAt>
+                    <longitude>-74.4067263</longitude>
+                    <latitude>5.293538470000001</latitude>
+                    <altitude>0.0</altitude>
+                    <heading>0.0</heading>
+                    <tilt>0.0</tilt>
+                    <range>0.0</range>
+                    <altitudeMode>clampToGround</altitudeMode>
+                </LookAt>
+                <Style>
+                    <IconStyle>
+                        <scale>0.375</scale>
+                        <heading>0.0</heading>
+                        <Icon>
+                            <href>http://localhost:8080/geoserver/kml/icon/point?0.0.0=</href>
+                            <refreshInterval>0.0</refreshInterval>
+                            <viewRefreshTime>0.0</viewRefreshTime>
+                            <viewBoundScale>0.0</viewBoundScale>
+                        </Icon>
+                    </IconStyle>
+                    <LabelStyle>
+                        <color>00ffffff</color>
+                        <scale>0.0</scale>
+                    </LabelStyle>
+                </Style>
                 <Point>
                     <coordinates>-74.4067263,5.29353847,1443.0</coordinates>
                 </Point>
             </Placemark>
             <Placemark id="terrenos.11">
-                <ExtendedData>
-                    <SchemaData schemaUrl="#terrenos_1">
-                        <SimpleData name="name">Santa Lucia</SimpleData>
-                    </SchemaData>
-                </ExtendedData>
+                <name>terrenos.11</name>
+                <description>&lt;h4&gt;terrenos&lt;/h4&gt;
+
+&lt;ul class="textattributes"&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class="atr-name"&gt;name&lt;/span&gt;:&lt;/strong&gt; &lt;span class="atr-value"&gt;Santa Lucia&lt;/span&gt;&lt;/li&gt;
+
+&lt;/ul&gt;
+</description>
+                <LookAt>
+                    <longitude>-74.40632089000002</longitude>
+                    <latitude>5.293211459999995</latitude>
+                    <altitude>0.0</altitude>
+                    <heading>0.0</heading>
+                    <tilt>0.0</tilt>
+                    <range>0.0</range>
+                    <altitudeMode>clampToGround</altitudeMode>
+                </LookAt>
+                <Style>
+                    <IconStyle>
+                        <scale>0.375</scale>
+                        <heading>0.0</heading>
+                        <Icon>
+                            <href>http://localhost:8080/geoserver/kml/icon/point?0.0.0=</href>
+                            <refreshInterval>0.0</refreshInterval>
+                            <viewRefreshTime>0.0</viewRefreshTime>
+                            <viewBoundScale>0.0</viewBoundScale>
+                        </Icon>
+                    </IconStyle>
+                    <LabelStyle>
+                        <color>00ffffff</color>
+                        <scale>0.0</scale>
+                    </LabelStyle>
+                </Style>
                 <Point>
                     <coordinates>-74.40632089,5.29321146,1458.0</coordinates>
                 </Point>
             </Placemark>
             <Placemark id="terrenos.12">
-                <ExtendedData>
-                    <SchemaData schemaUrl="#terrenos_1">
-                        <SimpleData name="name">Santa Lucia</SimpleData>
-                    </SchemaData>
-                </ExtendedData>
+                <name>terrenos.12</name>
+                <description>&lt;h4&gt;terrenos&lt;/h4&gt;
+
+&lt;ul class="textattributes"&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class="atr-name"&gt;name&lt;/span&gt;:&lt;/strong&gt; &lt;span class="atr-value"&gt;Santa Lucia&lt;/span&gt;&lt;/li&gt;
+
+&lt;/ul&gt;
+</description>
+                <LookAt>
+                    <longitude>-74.41026692000003</longitude>
+                    <latitude>5.29371491000002</latitude>
+                    <altitude>0.0</altitude>
+                    <heading>0.0</heading>
+                    <tilt>0.0</tilt>
+                    <range>0.0</range>
+                    <altitudeMode>clampToGround</altitudeMode>
+                </LookAt>
+                <Style>
+                    <IconStyle>
+                        <scale>0.375</scale>
+                        <heading>0.0</heading>
+                        <Icon>
+                            <href>http://localhost:8080/geoserver/kml/icon/point?0.0.0=</href>
+                            <refreshInterval>0.0</refreshInterval>
+                            <viewRefreshTime>0.0</viewRefreshTime>
+                            <viewBoundScale>0.0</viewBoundScale>
+                        </Icon>
+                    </IconStyle>
+                    <LabelStyle>
+                        <color>00ffffff</color>
+                        <scale>0.0</scale>
+                    </LabelStyle>
+                </Style>
                 <Point>
                     <coordinates>-74.41026692,5.29371491,1499.0</coordinates>
                 </Point>
             </Placemark>
             <Placemark id="terrenos.13">
-                <ExtendedData>
-                    <SchemaData schemaUrl="#terrenos_1">
-                        <SimpleData name="name">Santa Lucia</SimpleData>
-                    </SchemaData>
-                </ExtendedData>
+                <name>terrenos.13</name>
+                <description>&lt;h4&gt;terrenos&lt;/h4&gt;
+
+&lt;ul class="textattributes"&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class="atr-name"&gt;name&lt;/span&gt;:&lt;/strong&gt; &lt;span class="atr-value"&gt;Santa Lucia&lt;/span&gt;&lt;/li&gt;
+
+&lt;/ul&gt;
+</description>
+                <LookAt>
+                    <longitude>-74.40976008000004</longitude>
+                    <latitude>5.294676839999994</latitude>
+                    <altitude>0.0</altitude>
+                    <heading>0.0</heading>
+                    <tilt>0.0</tilt>
+                    <range>0.0</range>
+                    <altitudeMode>clampToGround</altitudeMode>
+                </LookAt>
+                <Style>
+                    <IconStyle>
+                        <scale>0.375</scale>
+                        <heading>0.0</heading>
+                        <Icon>
+                            <href>http://localhost:8080/geoserver/kml/icon/point?0.0.0=</href>
+                            <refreshInterval>0.0</refreshInterval>
+                            <viewRefreshTime>0.0</viewRefreshTime>
+                            <viewBoundScale>0.0</viewBoundScale>
+                        </Icon>
+                    </IconStyle>
+                    <LabelStyle>
+                        <color>00ffffff</color>
+                        <scale>0.0</scale>
+                    </LabelStyle>
+                </Style>
                 <Point>
                     <coordinates>-74.40976008,5.29467684,1529.0</coordinates>
                 </Point>
             </Placemark>
             <Placemark id="terrenos.14">
-                <ExtendedData>
-                    <SchemaData schemaUrl="#terrenos_1">
-                        <SimpleData name="name">Santa Lucia</SimpleData>
-                    </SchemaData>
-                </ExtendedData>
+                <name>terrenos.14</name>
+                <description>&lt;h4&gt;terrenos&lt;/h4&gt;
+
+&lt;ul class="textattributes"&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class="atr-name"&gt;name&lt;/span&gt;:&lt;/strong&gt; &lt;span class="atr-value"&gt;Santa Lucia&lt;/span&gt;&lt;/li&gt;
+
+&lt;/ul&gt;
+</description>
+                <LookAt>
+                    <longitude>-74.40769657999999</longitude>
+                    <latitude>5.294366220000001</latitude>
+                    <altitude>0.0</altitude>
+                    <heading>0.0</heading>
+                    <tilt>0.0</tilt>
+                    <range>0.0</range>
+                    <altitudeMode>clampToGround</altitudeMode>
+                </LookAt>
+                <Style>
+                    <IconStyle>
+                        <scale>0.375</scale>
+                        <heading>0.0</heading>
+                        <Icon>
+                            <href>http://localhost:8080/geoserver/kml/icon/point?0.0.0=</href>
+                            <refreshInterval>0.0</refreshInterval>
+                            <viewRefreshTime>0.0</viewRefreshTime>
+                            <viewBoundScale>0.0</viewBoundScale>
+                        </Icon>
+                    </IconStyle>
+                    <LabelStyle>
+                        <color>00ffffff</color>
+                        <scale>0.0</scale>
+                    </LabelStyle>
+                </Style>
                 <Point>
                     <coordinates>-74.40769658,5.29436622,1480.0</coordinates>
                 </Point>
             </Placemark>
             <Placemark id="terrenos.15">
-                <ExtendedData>
-                    <SchemaData schemaUrl="#terrenos_1">
-                        <SimpleData name="name">El Pomarroso</SimpleData>
-                    </SchemaData>
-                </ExtendedData>
+                <name>terrenos.15</name>
+                <description>&lt;h4&gt;terrenos&lt;/h4&gt;
+
+&lt;ul class="textattributes"&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class="atr-name"&gt;name&lt;/span&gt;:&lt;/strong&gt; &lt;span class="atr-value"&gt;El Pomarroso&lt;/span&gt;&lt;/li&gt;
+
+&lt;/ul&gt;
+</description>
+                <LookAt>
+                    <longitude>-74.40734337999999</longitude>
+                    <latitude>5.2951652600000045</latitude>
+                    <altitude>0.0</altitude>
+                    <heading>0.0</heading>
+                    <tilt>0.0</tilt>
+                    <range>0.0</range>
+                    <altitudeMode>clampToGround</altitudeMode>
+                </LookAt>
+                <Style>
+                    <IconStyle>
+                        <scale>0.375</scale>
+                        <heading>0.0</heading>
+                        <Icon>
+                            <href>http://localhost:8080/geoserver/kml/icon/point?0.0.0=</href>
+                            <refreshInterval>0.0</refreshInterval>
+                            <viewRefreshTime>0.0</viewRefreshTime>
+                            <viewBoundScale>0.0</viewBoundScale>
+                        </Icon>
+                    </IconStyle>
+                    <LabelStyle>
+                        <color>00ffffff</color>
+                        <scale>0.0</scale>
+                    </LabelStyle>
+                </Style>
                 <Point>
                     <coordinates>-74.40734338,5.29516526,1450.0</coordinates>
                 </Point>
             </Placemark>
             <Placemark id="terrenos.16">
-                <ExtendedData>
-                    <SchemaData schemaUrl="#terrenos_1">
-                        <SimpleData name="name">El Muche</SimpleData>
-                    </SchemaData>
-                </ExtendedData>
+                <name>terrenos.16</name>
+                <description>&lt;h4&gt;terrenos&lt;/h4&gt;
+
+&lt;ul class="textattributes"&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class="atr-name"&gt;name&lt;/span&gt;:&lt;/strong&gt; &lt;span class="atr-value"&gt;El Muche&lt;/span&gt;&lt;/li&gt;
+
+&lt;/ul&gt;
+</description>
+                <LookAt>
+                    <longitude>-74.40625618000001</longitude>
+                    <latitude>5.2993059899999935</latitude>
+                    <altitude>0.0</altitude>
+                    <heading>0.0</heading>
+                    <tilt>0.0</tilt>
+                    <range>0.0</range>
+                    <altitudeMode>clampToGround</altitudeMode>
+                </LookAt>
+                <Style>
+                    <IconStyle>
+                        <scale>0.375</scale>
+                        <heading>0.0</heading>
+                        <Icon>
+                            <href>http://localhost:8080/geoserver/kml/icon/point?0.0.0=</href>
+                            <refreshInterval>0.0</refreshInterval>
+                            <viewRefreshTime>0.0</viewRefreshTime>
+                            <viewBoundScale>0.0</viewBoundScale>
+                        </Icon>
+                    </IconStyle>
+                    <LabelStyle>
+                        <color>00ffffff</color>
+                        <scale>0.0</scale>
+                    </LabelStyle>
+                </Style>
                 <Point>
                     <coordinates>-74.40625618,5.29930599,1652.0</coordinates>
                 </Point>
             </Placemark>
             <Placemark id="terrenos.17">
-                <ExtendedData>
-                    <SchemaData schemaUrl="#terrenos_1">
-                        <SimpleData name="name">Mardoqueo</SimpleData>
-                    </SchemaData>
-                </ExtendedData>
+                <name>terrenos.17</name>
+                <description>&lt;h4&gt;terrenos&lt;/h4&gt;
+
+&lt;ul class="textattributes"&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class="atr-name"&gt;name&lt;/span&gt;:&lt;/strong&gt; &lt;span class="atr-value"&gt;Mardoqueo&lt;/span&gt;&lt;/li&gt;
+
+&lt;/ul&gt;
+</description>
+                <LookAt>
+                    <longitude>-74.40790945999998</longitude>
+                    <latitude>5.296970639999998</latitude>
+                    <altitude>0.0</altitude>
+                    <heading>0.0</heading>
+                    <tilt>0.0</tilt>
+                    <range>0.0</range>
+                    <altitudeMode>clampToGround</altitudeMode>
+                </LookAt>
+                <Style>
+                    <IconStyle>
+                        <scale>0.375</scale>
+                        <heading>0.0</heading>
+                        <Icon>
+                            <href>http://localhost:8080/geoserver/kml/icon/point?0.0.0=</href>
+                            <refreshInterval>0.0</refreshInterval>
+                            <viewRefreshTime>0.0</viewRefreshTime>
+                            <viewBoundScale>0.0</viewBoundScale>
+                        </Icon>
+                    </IconStyle>
+                    <LabelStyle>
+                        <color>00ffffff</color>
+                        <scale>0.0</scale>
+                    </LabelStyle>
+                </Style>
                 <Point>
                     <coordinates>-74.40790946,5.29697064,1410.0</coordinates>
                 </Point>
             </Placemark>
             <Placemark id="terrenos.18">
-                <ExtendedData>
-                    <SchemaData schemaUrl="#terrenos_1">
-                        <SimpleData name="name">Hoya las Juntos</SimpleData>
-                    </SchemaData>
-                </ExtendedData>
+                <name>terrenos.18</name>
+                <description>&lt;h4&gt;terrenos&lt;/h4&gt;
+
+&lt;ul class="textattributes"&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class="atr-name"&gt;name&lt;/span&gt;:&lt;/strong&gt; &lt;span class="atr-value"&gt;Hoya las Juntos&lt;/span&gt;&lt;/li&gt;
+
+&lt;/ul&gt;
+</description>
+                <LookAt>
+                    <longitude>-74.40662251</longitude>
+                    <latitude>5.296012809999979</latitude>
+                    <altitude>0.0</altitude>
+                    <heading>0.0</heading>
+                    <tilt>0.0</tilt>
+                    <range>0.0</range>
+                    <altitudeMode>clampToGround</altitudeMode>
+                </LookAt>
+                <Style>
+                    <IconStyle>
+                        <scale>0.375</scale>
+                        <heading>0.0</heading>
+                        <Icon>
+                            <href>http://localhost:8080/geoserver/kml/icon/point?0.0.0=</href>
+                            <refreshInterval>0.0</refreshInterval>
+                            <viewRefreshTime>0.0</viewRefreshTime>
+                            <viewBoundScale>0.0</viewBoundScale>
+                        </Icon>
+                    </IconStyle>
+                    <LabelStyle>
+                        <color>00ffffff</color>
+                        <scale>0.0</scale>
+                    </LabelStyle>
+                </Style>
                 <Point>
                     <coordinates>-74.40662251,5.29601281,1437.0</coordinates>
                 </Point>
             </Placemark>
             <Placemark id="terrenos.19">
-                <ExtendedData>
-                    <SchemaData schemaUrl="#terrenos_1">
-                        <SimpleData name="name">El Volador</SimpleData>
-                    </SchemaData>
-                </ExtendedData>
+                <name>terrenos.19</name>
+                <description>&lt;h4&gt;terrenos&lt;/h4&gt;
+
+&lt;ul class="textattributes"&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class="atr-name"&gt;name&lt;/span&gt;:&lt;/strong&gt; &lt;span class="atr-value"&gt;El Volador&lt;/span&gt;&lt;/li&gt;
+
+&lt;/ul&gt;
+</description>
+                <LookAt>
+                    <longitude>-74.40170139</longitude>
+                    <latitude>5.294470860000004</latitude>
+                    <altitude>0.0</altitude>
+                    <heading>0.0</heading>
+                    <tilt>0.0</tilt>
+                    <range>0.0</range>
+                    <altitudeMode>clampToGround</altitudeMode>
+                </LookAt>
+                <Style>
+                    <IconStyle>
+                        <scale>0.375</scale>
+                        <heading>0.0</heading>
+                        <Icon>
+                            <href>http://localhost:8080/geoserver/kml/icon/point?0.0.0=</href>
+                            <refreshInterval>0.0</refreshInterval>
+                            <viewRefreshTime>0.0</viewRefreshTime>
+                            <viewBoundScale>0.0</viewBoundScale>
+                        </Icon>
+                    </IconStyle>
+                    <LabelStyle>
+                        <color>00ffffff</color>
+                        <scale>0.0</scale>
+                    </LabelStyle>
+                </Style>
                 <Point>
                     <coordinates>-74.40170139,5.29447086,1576.0</coordinates>
                 </Point>
             </Placemark>
             <Placemark id="terrenos.20">
-                <ExtendedData>
-                    <SchemaData schemaUrl="#terrenos_1">
-                        <SimpleData name="name">Tudela Juntas</SimpleData>
-                    </SchemaData>
-                </ExtendedData>
+                <name>terrenos.20</name>
+                <description>&lt;h4&gt;terrenos&lt;/h4&gt;
+
+&lt;ul class="textattributes"&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class="atr-name"&gt;name&lt;/span&gt;:&lt;/strong&gt; &lt;span class="atr-value"&gt;Tudela Juntas&lt;/span&gt;&lt;/li&gt;
+
+&lt;/ul&gt;
+</description>
+                <LookAt>
+                    <longitude>-74.40459692000002</longitude>
+                    <latitude>5.2935175500000184</latitude>
+                    <altitude>0.0</altitude>
+                    <heading>0.0</heading>
+                    <tilt>0.0</tilt>
+                    <range>0.0</range>
+                    <altitudeMode>clampToGround</altitudeMode>
+                </LookAt>
+                <Style>
+                    <IconStyle>
+                        <scale>0.375</scale>
+                        <heading>0.0</heading>
+                        <Icon>
+                            <href>http://localhost:8080/geoserver/kml/icon/point?0.0.0=</href>
+                            <refreshInterval>0.0</refreshInterval>
+                            <viewRefreshTime>0.0</viewRefreshTime>
+                            <viewBoundScale>0.0</viewBoundScale>
+                        </Icon>
+                    </IconStyle>
+                    <LabelStyle>
+                        <color>00ffffff</color>
+                        <scale>0.0</scale>
+                    </LabelStyle>
+                </Style>
                 <Point>
                     <coordinates>-74.40459692,5.29351755,1434.0</coordinates>
                 </Point>
             </Placemark>
             <Placemark id="terrenos.21">
-                <ExtendedData>
-                    <SchemaData schemaUrl="#terrenos_1">
-                        <SimpleData name="name">Los naranjos</SimpleData>
-                    </SchemaData>
-                </ExtendedData>
+                <name>terrenos.21</name>
+                <description>&lt;h4&gt;terrenos&lt;/h4&gt;
+
+&lt;ul class="textattributes"&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class="atr-name"&gt;name&lt;/span&gt;:&lt;/strong&gt; &lt;span class="atr-value"&gt;Los naranjos&lt;/span&gt;&lt;/li&gt;
+
+&lt;/ul&gt;
+</description>
+                <LookAt>
+                    <longitude>-74.40971829</longitude>
+                    <latitude>5.294654600000001</latitude>
+                    <altitude>0.0</altitude>
+                    <heading>0.0</heading>
+                    <tilt>0.0</tilt>
+                    <range>0.0</range>
+                    <altitudeMode>clampToGround</altitudeMode>
+                </LookAt>
+                <Style>
+                    <IconStyle>
+                        <scale>0.375</scale>
+                        <heading>0.0</heading>
+                        <Icon>
+                            <href>http://localhost:8080/geoserver/kml/icon/point?0.0.0=</href>
+                            <refreshInterval>0.0</refreshInterval>
+                            <viewRefreshTime>0.0</viewRefreshTime>
+                            <viewBoundScale>0.0</viewBoundScale>
+                        </Icon>
+                    </IconStyle>
+                    <LabelStyle>
+                        <color>00ffffff</color>
+                        <scale>0.0</scale>
+                    </LabelStyle>
+                </Style>
                 <Point>
                     <coordinates>-74.40971829,5.2946546,1531.0</coordinates>
                 </Point>
             </Placemark>
             <Placemark id="terrenos.22">
-                <ExtendedData>
-                    <SchemaData schemaUrl="#terrenos_1">
-                        <SimpleData name="name">El almorzadero</SimpleData>
-                    </SchemaData>
-                </ExtendedData>
+                <name>terrenos.22</name>
+                <description>&lt;h4&gt;terrenos&lt;/h4&gt;
+
+&lt;ul class="textattributes"&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class="atr-name"&gt;name&lt;/span&gt;:&lt;/strong&gt; &lt;span class="atr-value"&gt;El almorzadero&lt;/span&gt;&lt;/li&gt;
+
+&lt;/ul&gt;
+</description>
+                <LookAt>
+                    <longitude>-74.40219728</longitude>
+                    <latitude>5.2937100399999935</latitude>
+                    <altitude>0.0</altitude>
+                    <heading>0.0</heading>
+                    <tilt>0.0</tilt>
+                    <range>0.0</range>
+                    <altitudeMode>clampToGround</altitudeMode>
+                </LookAt>
+                <Style>
+                    <IconStyle>
+                        <scale>0.375</scale>
+                        <heading>0.0</heading>
+                        <Icon>
+                            <href>http://localhost:8080/geoserver/kml/icon/point?0.0.0=</href>
+                            <refreshInterval>0.0</refreshInterval>
+                            <viewRefreshTime>0.0</viewRefreshTime>
+                            <viewBoundScale>0.0</viewBoundScale>
+                        </Icon>
+                    </IconStyle>
+                    <LabelStyle>
+                        <color>00ffffff</color>
+                        <scale>0.0</scale>
+                    </LabelStyle>
+                </Style>
                 <Point>
                     <coordinates>-74.40219728,5.29371004,1570.0</coordinates>
                 </Point>
             </Placemark>
             <Placemark id="terrenos.23">
-                <ExtendedData>
-                    <SchemaData schemaUrl="#terrenos_1">
-                        <SimpleData name="name">Las Ajuntas</SimpleData>
-                    </SchemaData>
-                </ExtendedData>
+                <name>terrenos.23</name>
+                <description>&lt;h4&gt;terrenos&lt;/h4&gt;
+
+&lt;ul class="textattributes"&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class="atr-name"&gt;name&lt;/span&gt;:&lt;/strong&gt; &lt;span class="atr-value"&gt;Las Ajuntas&lt;/span&gt;&lt;/li&gt;
+
+&lt;/ul&gt;
+</description>
+                <LookAt>
+                    <longitude>-74.40668446000001</longitude>
+                    <latitude>5.296606980000007</latitude>
+                    <altitude>0.0</altitude>
+                    <heading>0.0</heading>
+                    <tilt>0.0</tilt>
+                    <range>0.0</range>
+                    <altitudeMode>clampToGround</altitudeMode>
+                </LookAt>
+                <Style>
+                    <IconStyle>
+                        <scale>0.375</scale>
+                        <heading>0.0</heading>
+                        <Icon>
+                            <href>http://localhost:8080/geoserver/kml/icon/point?0.0.0=</href>
+                            <refreshInterval>0.0</refreshInterval>
+                            <viewRefreshTime>0.0</viewRefreshTime>
+                            <viewBoundScale>0.0</viewBoundScale>
+                        </Icon>
+                    </IconStyle>
+                    <LabelStyle>
+                        <color>00ffffff</color>
+                        <scale>0.0</scale>
+                    </LabelStyle>
+                </Style>
                 <Point>
                     <coordinates>-74.40668446,5.29660698,1424.0</coordinates>
                 </Point>
             </Placemark>
             <Placemark id="terrenos.24">
-                <ExtendedData>
-                    <SchemaData schemaUrl="#terrenos_1">
-                        <SimpleData name="name">Mardoqueo</SimpleData>
-                    </SchemaData>
-                </ExtendedData>
+                <name>terrenos.24</name>
+                <description>&lt;h4&gt;terrenos&lt;/h4&gt;
+
+&lt;ul class="textattributes"&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class="atr-name"&gt;name&lt;/span&gt;:&lt;/strong&gt; &lt;span class="atr-value"&gt;Mardoqueo&lt;/span&gt;&lt;/li&gt;
+
+&lt;/ul&gt;
+</description>
+                <LookAt>
+                    <longitude>-74.40307002999995</longitude>
+                    <latitude>5.293866070000007</latitude>
+                    <altitude>0.0</altitude>
+                    <heading>0.0</heading>
+                    <tilt>0.0</tilt>
+                    <range>0.0</range>
+                    <altitudeMode>clampToGround</altitudeMode>
+                </LookAt>
+                <Style>
+                    <IconStyle>
+                        <scale>0.375</scale>
+                        <heading>0.0</heading>
+                        <Icon>
+                            <href>http://localhost:8080/geoserver/kml/icon/point?0.0.0=</href>
+                            <refreshInterval>0.0</refreshInterval>
+                            <viewRefreshTime>0.0</viewRefreshTime>
+                            <viewBoundScale>0.0</viewBoundScale>
+                        </Icon>
+                    </IconStyle>
+                    <LabelStyle>
+                        <color>00ffffff</color>
+                        <scale>0.0</scale>
+                    </LabelStyle>
+                </Style>
                 <Point>
                     <coordinates>-74.40307003,5.29386607,1563.0</coordinates>
                 </Point>
             </Placemark>
             <Placemark id="terrenos.25">
-                <ExtendedData>
-                    <SchemaData schemaUrl="#terrenos_1">
-                        <SimpleData name="name">Angel</SimpleData>
-                    </SchemaData>
-                </ExtendedData>
+                <name>terrenos.25</name>
+                <description>&lt;h4&gt;terrenos&lt;/h4&gt;
+
+&lt;ul class="textattributes"&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class="atr-name"&gt;name&lt;/span&gt;:&lt;/strong&gt; &lt;span class="atr-value"&gt;Angel&lt;/span&gt;&lt;/li&gt;
+
+&lt;/ul&gt;
+</description>
+                <LookAt>
+                    <longitude>-74.40792168000002</longitude>
+                    <latitude>5.296969779999998</latitude>
+                    <altitude>0.0</altitude>
+                    <heading>0.0</heading>
+                    <tilt>0.0</tilt>
+                    <range>0.0</range>
+                    <altitudeMode>clampToGround</altitudeMode>
+                </LookAt>
+                <Style>
+                    <IconStyle>
+                        <scale>0.375</scale>
+                        <heading>0.0</heading>
+                        <Icon>
+                            <href>http://localhost:8080/geoserver/kml/icon/point?0.0.0=</href>
+                            <refreshInterval>0.0</refreshInterval>
+                            <viewRefreshTime>0.0</viewRefreshTime>
+                            <viewBoundScale>0.0</viewBoundScale>
+                        </Icon>
+                    </IconStyle>
+                    <LabelStyle>
+                        <color>00ffffff</color>
+                        <scale>0.0</scale>
+                    </LabelStyle>
+                </Style>
                 <Point>
                     <coordinates>-74.40792168,5.29696978,1420.0</coordinates>
                 </Point>
             </Placemark>
             <Placemark id="terrenos.26">
-                <ExtendedData>
-                    <SchemaData schemaUrl="#terrenos_1">
-                        <SimpleData name="name">El pantano</SimpleData>
-                    </SchemaData>
-                </ExtendedData>
+                <name>terrenos.26</name>
+                <description>&lt;h4&gt;terrenos&lt;/h4&gt;
+
+&lt;ul class="textattributes"&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class="atr-name"&gt;name&lt;/span&gt;:&lt;/strong&gt; &lt;span class="atr-value"&gt;El pantano&lt;/span&gt;&lt;/li&gt;
+
+&lt;/ul&gt;
+</description>
+                <LookAt>
+                    <longitude>-74.40458572</longitude>
+                    <latitude>5.293516220000001</latitude>
+                    <altitude>0.0</altitude>
+                    <heading>0.0</heading>
+                    <tilt>0.0</tilt>
+                    <range>0.0</range>
+                    <altitudeMode>clampToGround</altitudeMode>
+                </LookAt>
+                <Style>
+                    <IconStyle>
+                        <scale>0.375</scale>
+                        <heading>0.0</heading>
+                        <Icon>
+                            <href>http://localhost:8080/geoserver/kml/icon/point?0.0.0=</href>
+                            <refreshInterval>0.0</refreshInterval>
+                            <viewRefreshTime>0.0</viewRefreshTime>
+                            <viewBoundScale>0.0</viewBoundScale>
+                        </Icon>
+                    </IconStyle>
+                    <LabelStyle>
+                        <color>00ffffff</color>
+                        <scale>0.0</scale>
+                    </LabelStyle>
+                </Style>
                 <Point>
                     <coordinates>-74.40458572,5.29351622,1435.0</coordinates>
                 </Point>
             </Placemark>
             <Placemark id="terrenos.27">
-                <ExtendedData>
-                    <SchemaData schemaUrl="#terrenos_1">
-                        <SimpleData name="name">El Lavadero</SimpleData>
-                    </SchemaData>
-                </ExtendedData>
+                <name>terrenos.27</name>
+                <description>&lt;h4&gt;terrenos&lt;/h4&gt;
+
+&lt;ul class="textattributes"&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class="atr-name"&gt;name&lt;/span&gt;:&lt;/strong&gt; &lt;span class="atr-value"&gt;El Lavadero&lt;/span&gt;&lt;/li&gt;
+
+&lt;/ul&gt;
+</description>
+                <LookAt>
+                    <longitude>-74.40541833999998</longitude>
+                    <latitude>5.293773689999995</latitude>
+                    <altitude>0.0</altitude>
+                    <heading>0.0</heading>
+                    <tilt>0.0</tilt>
+                    <range>0.0</range>
+                    <altitudeMode>clampToGround</altitudeMode>
+                </LookAt>
+                <Style>
+                    <IconStyle>
+                        <scale>0.375</scale>
+                        <heading>0.0</heading>
+                        <Icon>
+                            <href>http://localhost:8080/geoserver/kml/icon/point?0.0.0=</href>
+                            <refreshInterval>0.0</refreshInterval>
+                            <viewRefreshTime>0.0</viewRefreshTime>
+                            <viewBoundScale>0.0</viewBoundScale>
+                        </Icon>
+                    </IconStyle>
+                    <LabelStyle>
+                        <color>00ffffff</color>
+                        <scale>0.0</scale>
+                    </LabelStyle>
+                </Style>
                 <Point>
                     <coordinates>-74.40541834,5.29377369,1449.0</coordinates>
                 </Point>
             </Placemark>
             <Placemark id="terrenos.28">
-                <ExtendedData>
-                    <SchemaData schemaUrl="#terrenos_1">
-                        <SimpleData name="name">El almorzadero</SimpleData>
-                    </SchemaData>
-                </ExtendedData>
+                <name>terrenos.28</name>
+                <description>&lt;h4&gt;terrenos&lt;/h4&gt;
+
+&lt;ul class="textattributes"&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class="atr-name"&gt;name&lt;/span&gt;:&lt;/strong&gt; &lt;span class="atr-value"&gt;El almorzadero&lt;/span&gt;&lt;/li&gt;
+
+&lt;/ul&gt;
+</description>
+                <LookAt>
+                    <longitude>-74.40136418999998</longitude>
+                    <latitude>5.293915549999994</latitude>
+                    <altitude>0.0</altitude>
+                    <heading>0.0</heading>
+                    <tilt>0.0</tilt>
+                    <range>0.0</range>
+                    <altitudeMode>clampToGround</altitudeMode>
+                </LookAt>
+                <Style>
+                    <IconStyle>
+                        <scale>0.375</scale>
+                        <heading>0.0</heading>
+                        <Icon>
+                            <href>http://localhost:8080/geoserver/kml/icon/point?0.0.0=</href>
+                            <refreshInterval>0.0</refreshInterval>
+                            <viewRefreshTime>0.0</viewRefreshTime>
+                            <viewBoundScale>0.0</viewBoundScale>
+                        </Icon>
+                    </IconStyle>
+                    <LabelStyle>
+                        <color>00ffffff</color>
+                        <scale>0.0</scale>
+                    </LabelStyle>
+                </Style>
                 <Point>
                     <coordinates>-74.40136419,5.29391555,1540.0</coordinates>
                 </Point>
