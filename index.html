@@ -1,1 +1,89 @@
-Github Page
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>WFS</title>
+    <link rel="stylesheet" href="https://openlayers.org/en/v4.1.1/css/ol.css" type="text/css">
+    <!-- The line below is only needed for old environments like Internet Explorer and Android 4.x -->
+    <script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=requestAnimationFrame,Element.prototype.classList,URL"></script>
+    <script src="https://openlayers.org/en/v4.1.1/build/ol.js"></script>
+    <style>
+    .ol-popup {
+      position: absolute;
+      background-color: white;
+      -webkit-filter: drop-shadow(0 1px 4px rgba(0,0,0,0.2));
+      filter: drop-shadow(0 1px 4px rgba(0,0,0,0.2));
+      padding: 15px;
+      border-radius: 10px;
+      border: 1px solid #cccccc;
+      bottom: 12px;
+      left: -50px;
+      min-width: 280px;
+    }
+    .ol-popup:after, .ol-popup:before {
+      top: 100%;
+      border: solid transparent;
+      content: " ";
+      height: 0;
+      width: 0;
+      position: absolute;
+      pointer-events: none;
+    }
+    .ol-popup:after {
+      border-top-color: white;
+      border-width: 10px;
+      left: 48px;
+      margin-left: -10px;
+    }
+    .ol-popup:before {
+      border-top-color: #cccccc;
+      border-width: 11px;
+      left: 48px;
+      margin-left: -11px;
+    }
+    .ol-popup-closer {
+      text-decoration: none;
+      position: absolute;
+      top: 2px;
+      right: 8px;
+    }
+    .ol-popup-closer:after {
+      content: "✖";
+    }
+    </style>
+
+  </head>
+
+  <body>
+    <div id="map" class="map"></div>
+    <script>
+    var raster = new ol.layer.Tile({
+      source: new ol.source.OSM()
+    });
+
+    var vector = new ol.layer.Vector({
+      source: new ol.source.Vector({
+        format: new ol.format.GeoJSON(),
+        url: function(extent) {
+          return 'http://localhost:8080/geoserver/municipios/ows?'+
+          'service=WFS&'+
+          'version=1.0.0&request=GetFeature&typeName=municipios:terrenos&'+
+          'outputFormat=application/json&srsname=EPSG:4326&'+
+          'bbox='+extent.join(',')+',EPSG:4326';
+        },
+        strategy: ol.loadingstrategy.bbox
+      })
+    });
+
+      var map = new ol.Map({
+        layers: [raster, vector],
+        target: document.getElementById('map'),
+        view: new ol.View({
+          projection: 'EPSG:4326',
+          center: [-74.083333, 4.600000],
+          maxZoom: 19,
+          zoom: 12
+        })
+      });
+    </script>
+  </body>
+</html>
