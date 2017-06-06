@@ -2,7 +2,7 @@
 <html>
   <head>
       <meta charset="UTF-8">
-    <title>WFS</title>
+    <title>Visor Web GIS</title>
     <link rel="stylesheet" href="https://openlayers.org/en/v4.1.1/css/ol.css" type="text/css">
     <!-- The line below is only needed for old environments like Internet Explorer and Android 4.x -->
     <script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=requestAnimationFrame,Element.prototype.classList,URL"></script>
@@ -56,24 +56,80 @@
 
   <body>
     <div id="map" class="map"></div>
+    <div id="popup" class="ol-popup">
+      <a href="#" id="popup-closer" class="ol-popup-closer"></a>
+      <div id="popup-content"></div>
+    </div>
+
     <form>
     <label>altitude size</label>
       <input id="altitude" type="range" min="1" max="50" step="1" value="15"/>
     </form>
     <script>
-    var altitude = document.getElementById('altitude');
+    /*Elementos del popup*/
+    var container = document.getElementById('popup');
+    var content = document.getElementById('popup-content');
+    var closer = document.getElementById('popup-closer');
+
+    /**
+    * Create an overlay to anchor the popup to the map.
+    */
+      var overlay = new ol.Overlay(/** @type {olx.OverlayOptions} */ ({
+        element: container,
+        autoPan: true,
+        autoPanAnimation: {
+          duration: 250
+        }
+      }));
+
+      /**
+         * Add a click handler to hide the popup.
+         * @return {boolean} Don't follow the href.
+         */
+        closer.onclick = function() {
+          overlay.setPosition(undefined);
+          closer.blur();
+          return false;
+        };
+
+
+    /*Mapa*/
     var raster = new ol.layer.Tile({
       source: new ol.source.OSM()
     });
 
+  /*Coordenadas con GeoJson
     var vector = new ol.layer.Vector({
        source: new ol.source.Vector({
-         format: new ol.format.KML(),
-         url: 'terrenos.kml'
-       }),
-       altitude: parseInt(altitude.value)
-     });
+         //projection: ol.proj.get("ESPG:4326"),
+        format: new ol.format.GeoJSON(),
+         url: 'wfs.js',
+         strategy: ol.loadingstrategy.bbox
 
+       })
+     });*/
+     /*Coordenadas*/
+     var vector = new ol.layer.Vector({
+        source: new ol.source.Vector({
+          projection: ol.proj.get("ESPG:4326"),
+          url: 'terrenos.kml',
+          format: new ol.format.KML({
+            extractStyles: false
+          })
+
+        })
+      });
+/*esto es nuevo*/
+     vector.getSource().on('addfeature',function(event) {
+       var terreno = event.feature.get('name');
+       var description = event.feature.get('description');
+       //var altitude = parseFloat();
+        //event.target.openPopup();
+       content.innerHTML = '<p>Ubicación</p>' +terreno+"<br/>"+description;
+       overlay.setPosition();
+     })
+
+     /*******************/
       var map = new ol.Map({
         layers: [raster, vector],
         target: document.getElementById('map'),
@@ -84,6 +140,8 @@
           zoom: 12
         })
       });
+
+
     </script>
   </body>
 </html>
