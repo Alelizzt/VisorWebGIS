@@ -62,7 +62,7 @@
     </div>
 
     <form>
-    <label>altitude size</label>
+    <label>altitud</label>
       <input id="altitude" type="range" min="1" max="50" step="1" value="15"/>
     </form>
     <script>
@@ -70,6 +70,9 @@
     var container = document.getElementById('popup');
     var content = document.getElementById('popup-content');
     var closer = document.getElementById('popup-closer');
+
+    /*Control altitud*/
+    var altitude = document.getElementById('altitude');
 
     /**
     * Create an overlay to anchor the popup to the map.
@@ -116,18 +119,20 @@
           format: new ol.format.KML({
             extractStyles: false
           })
-
         })
       });
-/*esto es nuevo*/
-     vector.getSource().on('addfeature',function(event) {
+/*añadiendo informacion al popup*/
+    vector.on('singleclick', function(event) {
        var terreno = event.feature.get('name');
        var description = event.feature.get('description');
-       //var altitude = parseFloat();
-        //event.target.openPopup();
-       content.innerHTML = '<p>Ubicación</p>' +terreno+"<br/>"+description;
-       overlay.setPosition();
-     })
+       var altitude = event.feature.parseFloat('altitude');
+      event.target.openPopup();
+      content.innerHTML = '<p>Ubicación</p>' +terreno+'<br/>'+description+'<br/>'+altitude;
+      console.console.log(terreno, description, altitude);
+      overlay.setPosition(event.coordinate);
+    });
+
+/*altitud*/
 
      /*******************/
       var map = new ol.Map({
@@ -136,8 +141,8 @@
         view: new ol.View({
           projection: 'EPSG:4326',
           center: [-74.40779967, 5.29334365],
-          maxZoom: 19,
-          zoom: 12
+          maxZoom: 20,
+          zoom: 17
         })
       });
 
