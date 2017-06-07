@@ -116,28 +116,43 @@
     *************************************************************************************/
 
     // display popup on click GEoJSON
-    var element = document.getElementById('popup');
+    //var element = document.getElementById('popup');
     map.on('click', function(evt) {
-      var feature = map.forEachFeatureAtPixel(evt.pixel,
-        function(feature, layer) {
-          return feature;
+      var element = popup.getElement();
+      var features = [];
+      var pixel = map.getEventPixel(evt.originalEvent);
+      if (evt.dragging) {
+            return;
+          }
+        map.forEachFeatureAtPixel(pixel, function(feature) {
+          features.push(feature);
         });
-      if (feature) {
-        var geometry = feature.getGeometry();
-        var coord = geometry.getCoordinates();
-        var temp = new Array();
-        temp = String(coord).split(',');
-        popup.setPosition(coord);
-        //coord = ol.proj.transform(coord, 'EPSG:3857', 'EPSG:4326');
-        $(element).popover({
-          'placement': 'top',
-          'html': true,
-          'content': ('<p><b>Ubicación:</b> '+feature.get('name')+'</p> <p><b>Coordenadas:</b> ' + coord + '</p> <b>Altura: </b>'+temp[2])
-        });
-        $(element).popover('show');
-      } else {
-        $(element).popover('destroy');
-      }
+        if (features.length > 0) {
+
+          var i, ii;
+          for (i = 0, ii = features.length; i < ii; ++i) {
+            var nombre = features[i].get('name');
+            var geometry = features[i].getGeometry();
+            var coord = geometry.getCoordinates();
+            var temp = new Array();
+            temp = String(coord).split(',');
+          }
+        }else {
+          return null;
+        }
+
+
+      $(element).popover('destroy');
+      popup.setPosition(coord);
+      // the keys are quoted to prevent renaming in ADVANCED mode.
+      $(element).popover({
+        'placement': 'top',
+        'animation': false,
+        'html': true,
+        'content': ('<p><b>Ubicación:</b> '+nombre+'</p> <p><b>Coordenadas:</b> ' + coord + '</p> <b>Altura: </b>'+temp[2])
+      });
+      $(element).popover('show');
+
     });
   </script>
 </body>
