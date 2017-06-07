@@ -1,152 +1,119 @@
 <!DOCTYPE html>
 <html>
-  <head>
-      <meta charset="UTF-8">
-    <title>Visor Web GIS</title>
-    <link rel="stylesheet" href="https://openlayers.org/en/v4.1.1/css/ol.css" type="text/css">
-    <!-- The line below is only needed for old environments like Internet Explorer and Android 4.x -->
-    <script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=requestAnimationFrame,Element.prototype.classList,URL"></script>
-    <script src="https://openlayers.org/en/v4.1.1/build/ol.js"></script>
-    <style>
-    .ol-popup {
-      position: absolute;
-      background-color: white;
-      -webkit-filter: drop-shadow(0 1px 4px rgba(0,0,0,0.2));
-      filter: drop-shadow(0 1px 4px rgba(0,0,0,0.2));
-      padding: 15px;
-      border-radius: 10px;
-      border: 1px solid #cccccc;
-      bottom: 12px;
-      left: -50px;
-      min-width: 280px;
-    }
-    .ol-popup:after, .ol-popup:before {
-      top: 100%;
-      border: solid transparent;
-      content: " ";
-      height: 0;
-      width: 0;
-      position: absolute;
-      pointer-events: none;
-    }
-    .ol-popup:after {
-      border-top-color: white;
-      border-width: 10px;
-      left: 48px;
-      margin-left: -10px;
-    }
-    .ol-popup:before {
-      border-top-color: #cccccc;
-      border-width: 11px;
-      left: 48px;
-      margin-left: -11px;
-    }
-    .ol-popup-closer {
-      text-decoration: none;
-      position: absolute;
-      top: 2px;
-      right: 8px;
-    }
-    .ol-popup-closer:after {
-      content: "✖";
-    }
-    </style>
 
-  </head>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Visor Web GIS</title>
+  <link rel="stylesheet" href="https://openlayers.org/en/v4.1.1/css/ol.css" type="text/css">
+  <!-- The line below is only needed for old environments like Internet Explorer and Android 4.x -->
+  <script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=requestAnimationFrame,Element.prototype.classList,URL"></script>
+  <script src="https://openlayers.org/en/v4.1.1/build/ol.js"></script>
+  <!--bootstrap / jquery-->
+  <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <style>
+  .popover-content {
+        min-width: 180px;
+      }
+  </style>
+</head>
 
-  <body>
-    <div id="map" class="map"></div>
-    <div id="popup" class="ol-popup">
-      <a href="#" id="popup-closer" class="ol-popup-closer"></a>
-      <div id="popup-content"></div>
-    </div>
+<body>
+  <div style="width:80%; height:80%" id="map" class="map"></div>
+  <div id="popup" class="ol-popup"> </div>
 
-    <form>
-    <label>altitud</label>
-      <input id="altitude" type="range" min="1" max="50" step="1" value="15"/>
-    </form>
-    <script>
-    /*Elementos del popup*/
-    var container = document.getElementById('popup');
-    var content = document.getElementById('popup-content');
-    var closer = document.getElementById('popup-closer');
+  <script>
 
-    /*Control altitud*/
-    var altitude = document.getElementById('altitude');
-
-    /**
-    * Create an overlay to anchor the popup to the map.
-    */
-      var overlay = new ol.Overlay(/** @type {olx.OverlayOptions} */ ({
-        element: container,
-        autoPan: true,
-        autoPanAnimation: {
-          duration: 250
-        }
-      }));
-
-      /**
-         * Add a click handler to hide the popup.
-         * @return {boolean} Don't follow the href.
-         */
-        closer.onclick = function() {
-          overlay.setPosition(undefined);
-          closer.blur();
-          return false;
-        };
-
-
-    /*Mapa*/
+    /*Layer Mapa*/
     var raster = new ol.layer.Tile({
       source: new ol.source.OSM()
     });
 
-  /*Coordenadas con GeoJson
-    var vector = new ol.layer.Vector({
-       source: new ol.source.Vector({
-         //projection: ol.proj.get("ESPG:4326"),
-        format: new ol.format.GeoJSON(),
-         url: 'wfs.js',
-         strategy: ol.loadingstrategy.bbox
+    /*Coordenadas con GeoJson
+      var vector = new ol.layer.Vector({
+         source: new ol.source.Vector({
+           //projection: ol.proj.get("ESPG:4326"),
+          format: new ol.format.GeoJSON(),
+           url: 'wfs.json',
+           strategy: ol.loadingstrategy.bbox
 
-       })
-     });*/
-     /*Coordenadas*/
-     var vector = new ol.layer.Vector({
-        source: new ol.source.Vector({
-          projection: ol.proj.get("ESPG:4326"),
-          url: 'terrenos.kml',
-          format: new ol.format.KML({
-            extractStyles: false
-          })
+         })
+       });*/
+    /*Layer Coordenadas*/
+    var vector = new ol.layer.Vector({
+      source: new ol.source.Vector({
+        projection: ol.proj.get("ESPG:4326"),
+        url: 'terrenos.kml',
+        format: new ol.format.KML({
+          extractStyles: false
         })
-      });
-/*añadiendo informacion al popup*/
-    vector.on('singleclick', function(event) {
-       var terreno = event.feature.get('name');
-       var description = event.feature.get('description');
-       var altitude = event.feature.parseFloat('altitude');
-      event.target.openPopup();
-      content.innerHTML = '<p>Ubicación</p>' +terreno+'<br/>'+description+'<br/>'+altitude;
-      console.console.log(terreno, description, altitude);
-      overlay.setPosition(event.coordinate);
+      })
     });
 
-/*altitud*/
 
-     /*******************/
-      var map = new ol.Map({
-        layers: [raster, vector],
-        target: document.getElementById('map'),
-        view: new ol.View({
-          projection: 'EPSG:4326',
-          center: [-74.40779967, 5.29334365],
-          maxZoom: 20,
-          zoom: 17
-        })
+  /*Mapa principal*/
+    var map = new ol.Map({
+      layers: [raster, vector],
+      target: document.getElementById('map'),
+      view: new ol.View({
+        projection: 'EPSG:4326',
+        center: [-74.40779967, 5.29334365],
+        maxZoom: 20,
+        zoom: 17
+      })
+    });
+
+
+    // Popup showing the position the user clicked
+     var popup = new ol.Overlay({
+       element: document.getElementById('popup')
+     });
+     map.addOverlay(popup);
+
+map.on('click', function(evt) {
+        var features = [];
+        var element = popup.getElement();
+        var nombreT = "";
+        //var altura = "";
+        var coordinate = evt.coordinate;
+        var pixel = map.getEventPixel(evt.originalEvent);
+
+        if (evt.dragging) {
+              return;
+            }
+          map.forEachFeatureAtPixel(pixel, function(feature) {
+            features.push(feature);
+          });
+
+          if (features.length > 0) {
+            var info = [];
+            var i, ii;
+            for (i = 0, ii = features.length; i < ii; ++i) {
+              info.push(features[i].get('name'));
+              nombreT=features[i].get('description');
+              //altura=features[i].get('LookAt');
+            }
+          }else {
+            return null;
+          }
+
+
+        $(element).popover('destroy');
+        popup.setPosition(coordinate);
+        // the keys are quoted to prevent renaming in ADVANCED mode.
+        $(element).popover({
+          'placement': 'top',
+          'animation': false,
+          'html': true,
+          'content': '<p>'+nombreT+'</p><code>' + coordinate + '</code> <br/>'
+        });
+        $(element).popover('show');
+
       });
 
+  </script>
+</body>
 
-    </script>
-  </body>
 </html>
