@@ -14,9 +14,9 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
   <style>
-  .popover-content {
-        min-width: 180px;
-      }
+    .popover-content {
+      min-width: 180px;
+    }
   </style>
 </head>
 
@@ -25,23 +25,22 @@
   <div id="popup" class="ol-popup"> </div>
 
   <script>
-
     /*Layer Mapa*/
     var raster = new ol.layer.Tile({
       source: new ol.source.OSM()
     });
 
-    /*Coordenadas con GeoJson
-      var vector = new ol.layer.Vector({
-         source: new ol.source.Vector({
-           //projection: ol.proj.get("ESPG:4326"),
-          format: new ol.format.GeoJSON(),
-           url: 'wfs.json',
-           strategy: ol.loadingstrategy.bbox
+    /*Coordenadas con GeoJson*/
+    var vector = new ol.layer.Vector({
+      source: new ol.source.Vector({
+        //projection: ol.proj.get("ESPG:4326"),
+        format: new ol.format.GeoJSON(),
+        url: 'wfs.json',
+        strategy: ol.loadingstrategy.bbox
 
-         })
-       });*/
-    /*Layer Coordenadas*/
+      })
+    });
+    /*Layer Coordenadas kml
     var vector = new ol.layer.Vector({
       source: new ol.source.Vector({
         projection: ol.proj.get("ESPG:4326"),
@@ -51,9 +50,9 @@
         })
       })
     });
+  */
 
-
-  /*Mapa principal*/
+    /*Mapa principal*/
     var map = new ol.Map({
       layers: [raster, vector],
       target: document.getElementById('map'),
@@ -67,52 +66,79 @@
 
 
     // Popup showing the position the user clicked
-     var popup = new ol.Overlay({
-       element: document.getElementById('popup')
-     });
-     map.addOverlay(popup);
+    var popup = new ol.Overlay({
+      element: document.getElementById('popup')
+    });
+    map.addOverlay(popup);
 
-map.on('click', function(evt) {
-        var features = [];
-        var element = popup.getElement();
-        var nombreT = "";
-        //var altura = "";
-        var coordinate = evt.coordinate;
-        var pixel = map.getEventPixel(evt.originalEvent);
+    /******************************* Popup para mostrar datos de kml
+    map.on('click', function(evt) {
+            var features = [];
+            var element = popup.getElement();
+            var nombreT = "";
+            var altura = "";
+            var coordinate = evt.coordinate;
+            var pixel = map.getEventPixel(evt.originalEvent);
 
-        if (evt.dragging) {
-              return;
-            }
-          map.forEachFeatureAtPixel(pixel, function(feature) {
-            features.push(feature);
+            if (evt.dragging) {
+                  return;
+                }
+              map.forEachFeatureAtPixel(pixel, function(feature) {
+                features.push(feature);
+              });
+
+              if (features.length > 0) {
+
+                var i, ii;
+                for (i = 0, ii = features.length; i < ii; ++i) {
+                  var name =features[i].get('name');
+                  nombreT=features[i].get('description');
+                  altura=features[i].get('LookAt');
+                }
+                console.log(altura);
+              }else {
+                return null;
+              }
+
+
+            $(element).popover('destroy');
+            popup.setPosition(coordinate);
+            // the keys are quoted to prevent renaming in ADVANCED mode.
+            $(element).popover({
+              'placement': 'top',
+              'animation': false,
+              'html': true,
+              'content': '<p>'+nombreT+'</p><code>' + coordinate + '</code> <br/>'+ altura
+            });
+            $(element).popover('show');
+
           });
+    *************************************************************************************/
 
-          if (features.length > 0) {
-            var info = [];
-            var i, ii;
-            for (i = 0, ii = features.length; i < ii; ++i) {
-              info.push(features[i].get('name'));
-              nombreT=features[i].get('description');
-              //altura=features[i].get('LookAt');
-            }
-          }else {
-            return null;
-          }
-
-
-        $(element).popover('destroy');
-        popup.setPosition(coordinate);
-        // the keys are quoted to prevent renaming in ADVANCED mode.
+    // display popup on click GEoJSON
+    var element = document.getElementById('popup');
+    map.on('click', function(evt) {
+      var feature = map.forEachFeatureAtPixel(evt.pixel,
+        function(feature, layer) {
+          return feature;
+        });
+      if (feature) {
+        var geometry = feature.getGeometry();
+        var coord = geometry.getCoordinates();
+        var temp = new Array();
+        temp = String(coord).split(',');
+        popup.setPosition(coord);
+        //coord = ol.proj.transform(coord, 'EPSG:3857', 'EPSG:4326');
         $(element).popover({
           'placement': 'top',
-          'animation': false,
           'html': true,
-          'content': '<p>'+nombreT+'</p><code>' + coordinate + '</code> <br/>'
+          'content': ('<p><b>Ubicación:</b> '+feature.get('name')+'</p> <p><b>Coordenadas:</b> ' + coord + '</p> <b>Altura: </b>'+temp[2])
         });
         $(element).popover('show');
-
-      });
-
+      } else {
+        $(element).popover('destroy');
+      }
+    });
   </script>
 </body>
 
