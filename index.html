@@ -86,7 +86,17 @@
         url: 'wfs.json',
         strategy: ol.loadingstrategy.bbox
       }),
-      blur: parseInt(blur.value, 10)
+      style: new ol.style.Style({
+        image: new ol.style.Circle({
+          radius: 2,
+          fill: new ol.style.Fill({
+            color: 'red'
+          }),
+          stroke: new ol.style.Stroke({
+            color: 'black'
+          })
+        })
+      })
     });
 
     /*Layer Coordenadas kml
@@ -205,9 +215,21 @@
           return null;
         }
 
-      content.innerHTML = '<p><b>Ubicación:</b> '+nombre+'</p> <p><b>Coordenadas:</b> ' + coord + '</p> <b>Altura: </b>'+altura
+      content.innerHTML = '<p><b>Ubicación:</b> '+nombre+'</p> <p><b>Coordenadas:</b> <code>' + coord + '</code> </p> <b>Altura: </b>'+altura
       popup.setPosition(coord);
 
+    });
+
+/*Cambia el puntero cuando está sobre los puntos*/
+    map.on("pointermove", function (evt) {
+        var hit = this.forEachFeatureAtPixel(evt.pixel, function(feature, layer) {
+            return true;
+        });
+        if (hit) {
+            this.getTarget().style.cursor = 'pointer';
+        } else {
+            this.getTarget().style.cursor = '';
+        }
     });
 
   </script>
