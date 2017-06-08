@@ -60,11 +60,30 @@
 </head>
 
 <body>
-  <div style="width:80%; height:80%" id="map" class="map"></div>
-  <div id="popup" class="ol-popup">
-      <a href="#" id="popup-closer" class="ol-popup-closer"></a>
-      <div id="popup-content"></div>
-    </div>
+  <div class="container" align="center">
+   <div class="col-sm-9">
+    <div id="map" class="map"></div>
+    <div id="popup" class="ol-popup">
+        <a href="#" id="popup-closer" class="ol-popup-closer"></a>
+        <div id="popup-content"></div>
+      </div>
+  </div>
+  <div class="col-sm-3">
+    <table class="table table-bordered active">
+    <thead>
+      <tr class="success">
+        <th colspan="2">Leyenda</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="active">
+        <td><img src="bajo.png"> Altura de 1410 a 1450 metros</td>
+      </tr>
+      <tr class="active">
+        <td><img src="alto.png"> Altura de 1450 a 1576 metros</td>
+      </tr>
+  </div>
+  </div>
   <script>
   /**
    * Elements that make up the popup.
@@ -149,7 +168,7 @@
         projection: 'EPSG:4326',
         center: [-74.40779967, 5.29334365],
         maxZoom: 20,
-        zoom: 17
+        zoom: 16
       })
     });
 
