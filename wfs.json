@@ -1,0 +1,319 @@
+{
+  "type": "FeatureCollection",
+  "totalFeatures": 28,
+  "features": [{
+    "type": "Feature",
+    "id": "terrenos.1",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [5.29334365, -74.40779967, 1489]
+    },
+    "geometry_name": "geom",
+    "properties": {
+      "name": "Santa Lucia"
+    }
+  }, {
+    "type": "Feature",
+    "id": "terrenos.2",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [-74.41032855, 5.29489562, 1505]
+    },
+    "geometry_name": "geom",
+    "properties": {
+      "name": "Tudelita"
+    }
+  }, {
+    "type": "Feature",
+    "id": "terrenos.3",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [-74.40971832, 5.29499597, 1497]
+    },
+    "geometry_name": "geom",
+    "properties": {
+      "name": "Santa Lucia"
+    }
+  }, {
+    "type": "Feature",
+    "id": "terrenos.4",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [-74.40887785, 5.29470879, 1492]
+    },
+    "geometry_name": "geom",
+    "properties": {
+      "name": "Santa Lucia"
+    }
+  }, {
+    "type": "Feature",
+    "id": "terrenos.5",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [-74.40814088, 5.29563292, 1482]
+    },
+    "geometry_name": "geom",
+    "properties": {
+      "name": "Bellavista"
+    }
+  }, {
+    "type": "Feature",
+    "id": "terrenos.6",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [-74.40745874, 5.293915, 1483]
+    },
+    "geometry_name": "geom",
+    "properties": {
+      "name": "Santa Lucia"
+    }
+  }, {
+    "type": "Feature",
+    "id": "terrenos.7",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [-74.40847956, 5.29606572, 1468]
+    },
+    "geometry_name": "geom",
+    "properties": {
+      "name": "Las Juntas"
+    }
+  }, {
+    "type": "Feature",
+    "id": "terrenos.8",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [-74.40677837, 5.29372768, 1438]
+    },
+    "geometry_name": "geom",
+    "properties": {
+      "name": "Santa Lucia"
+    }
+  }, {
+    "type": "Feature",
+    "id": "terrenos.9",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [-74.40641373, 5.29327173, 1457]
+    },
+    "geometry_name": "geom",
+    "properties": {
+      "name": "Santa Lucia"
+    }
+  }, {
+    "type": "Feature",
+    "id": "terrenos.10",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [-74.4067263, 5.29353847, 1443]
+    },
+    "geometry_name": "geom",
+    "properties": {
+      "name": "Santa Lucia"
+    }
+  }, {
+    "type": "Feature",
+    "id": "terrenos.11",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [-74.40632089, 5.29321146, 1458]
+    },
+    "geometry_name": "geom",
+    "properties": {
+      "name": "Santa Lucia"
+    }
+  }, {
+    "type": "Feature",
+    "id": "terrenos.12",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [-74.41026692, 5.29371491, 1499]
+    },
+    "geometry_name": "geom",
+    "properties": {
+      "name": "Santa Lucia"
+    }
+  }, {
+    "type": "Feature",
+    "id": "terrenos.13",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [-74.40976008, 5.29467684, 1529]
+    },
+    "geometry_name": "geom",
+    "properties": {
+      "name": "Santa Lucia"
+    }
+  }, {
+    "type": "Feature",
+    "id": "terrenos.14",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [-74.40769658, 5.29436622, 1480]
+    },
+    "geometry_name": "geom",
+    "properties": {
+      "name": "Santa Lucia"
+    }
+  }, {
+    "type": "Feature",
+    "id": "terrenos.15",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [-74.40734338, 5.29516526, 1450]
+    },
+    "geometry_name": "geom",
+    "properties": {
+      "name": "El Pomarroso"
+    }
+  }, {
+    "type": "Feature",
+    "id": "terrenos.16",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [-74.40625618, 5.29930599, 1652]
+    },
+    "geometry_name": "geom",
+    "properties": {
+      "name": "El Muche"
+    }
+  }, {
+    "type": "Feature",
+    "id": "terrenos.17",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [-74.40790946, 5.29697064, 1410]
+    },
+    "geometry_name": "geom",
+    "properties": {
+      "name": "Mardoqueo"
+    }
+  }, {
+    "type": "Feature",
+    "id": "terrenos.18",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [-74.40662251, 5.29601281, 1437]
+    },
+    "geometry_name": "geom",
+    "properties": {
+      "name": "Hoya las Juntos"
+    }
+  }, {
+    "type": "Feature",
+    "id": "terrenos.19",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [-74.40170139, 5.29447086, 1576]
+    },
+    "geometry_name": "geom",
+    "properties": {
+      "name": "El Volador"
+    }
+  }, {
+    "type": "Feature",
+    "id": "terrenos.20",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [-74.40459692, 5.29351755, 1434]
+    },
+    "geometry_name": "geom",
+    "properties": {
+      "name": "Tudela Juntas"
+    }
+  }, {
+    "type": "Feature",
+    "id": "terrenos.21",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [-74.40971829, 5.2946546, 1531]
+    },
+    "geometry_name": "geom",
+    "properties": {
+      "name": "Los naranjos"
+    }
+  }, {
+    "type": "Feature",
+    "id": "terrenos.22",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [-74.40219728, 5.29371004, 1570]
+    },
+    "geometry_name": "geom",
+    "properties": {
+      "name": "El almorzadero"
+    }
+  }, {
+    "type": "Feature",
+    "id": "terrenos.23",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [-74.40668446, 5.29660698, 1424]
+    },
+    "geometry_name": "geom",
+    "properties": {
+      "name": "Las Ajuntas"
+    }
+  }, {
+    "type": "Feature",
+    "id": "terrenos.24",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [-74.40307003, 5.29386607, 1563]
+    },
+    "geometry_name": "geom",
+    "properties": {
+      "name": "Mardoqueo"
+    }
+  }, {
+    "type": "Feature",
+    "id": "terrenos.25",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [-74.40792168, 5.29696978, 1420]
+    },
+    "geometry_name": "geom",
+    "properties": {
+      "name": "Angel"
+    }
+  }, {
+    "type": "Feature",
+    "id": "terrenos.26",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [-74.40458572, 5.29351622, 1435]
+    },
+    "geometry_name": "geom",
+    "properties": {
+      "name": "El pantano"
+    }
+  }, {
+    "type": "Feature",
+    "id": "terrenos.27",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [-74.40541834, 5.29377369, 1449]
+    },
+    "geometry_name": "geom",
+    "properties": {
+      "name": "El Lavadero"
+    }
+  }, {
+    "type": "Feature",
+    "id": "terrenos.28",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [-74.40136419, 5.29391555, 1540]
+    },
+    "geometry_name": "geom",
+    "properties": {
+      "name": "El almorzadero"
+    }
+  }],
+  "crs": {
+    "type": "name",
+    "properties": {
+      "name": "urn:ogc:def:crs:EPSG::4326"
+    }
+  }
+}
