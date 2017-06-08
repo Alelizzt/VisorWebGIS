@@ -73,6 +73,45 @@
         var content = document.getElementById('popup-content');
         var closer = document.getElementById('popup-closer');
 
+      var altura = 0.0;
+
+        var iconStyle = new ol.style.Style({
+          image: new ol.style.Circle({
+            radius: 6,
+            fill: null,
+            stroke: new ol.style.Stroke({
+              color: 'red',
+              width: 3/2
+            })
+          })
+        });
+
+      var iconStyle2 = new ol.style.Style({
+        image: new ol.style.Circle({
+          radius: 6,
+                fill: new ol.style.Fill({
+                  color: 'red'
+                }),
+                stroke: new ol.style.Stroke({
+                  color: 'black',
+                  width: 3/2
+                })
+        })
+      });
+      var customStyleFunction = function(feature) {
+        var geometry = feature.getGeometry();
+        var coord = geometry.getCoordinates();
+        var temp = new Array();
+        temp = String(coord).split(',');
+        altura =parseFloat(temp[2]);
+        //console.log(altura);
+        if(altura > 1450){
+          return iconStyle2;
+        } else {
+          return iconStyle;
+        }
+      };
+
     /*Layer Mapa*/
     var raster = new ol.layer.Tile({
       source: new ol.source.OSM()
@@ -86,19 +125,9 @@
         url: 'wfs.json',
         strategy: ol.loadingstrategy.bbox
       }),
-      style: new ol.style.Style({
-        image: new ol.style.Circle({
-          radius: 6,
-          fill: new ol.style.Fill({
-            color: 'red'
-          }),
-          stroke: new ol.style.Stroke({
-            color: 'black',
-            width: 3/2
-          })
-        })
-      })
+      style: customStyleFunction
     });
+
 
     /*Layer Coordenadas kml
     var vector = new ol.layer.Vector({
@@ -208,7 +237,7 @@
             var coord = geometry.getCoordinates();
             var temp = new Array();
             temp = String(coord).split(',');
-            var altura =parseFloat(temp[2]);
+            altura =parseFloat(temp[2]);
 
           }
 
@@ -221,16 +250,15 @@
 
     });
 
-/*Cambia el puntero cuando está sobre los puntos*/
-    map.on("pointermove", function (evt) {
-        var hit = this.forEachFeatureAtPixel(evt.pixel, function(feature, layer) {
-            return true;
-        });
-        if (hit) {
-            this.getTarget().style.cursor = 'pointer';
-        } else {
-            this.getTarget().style.cursor = '';
-        }
+    // change mouse cursor when over marker
+    map.on('pointermove', function(e) {
+      if (e.dragging) {
+        $(container).popover('destroy');
+        return;
+      }
+      var pixel = map.getEventPixel(e.originalEvent);
+      var hit = map.hasFeatureAtPixel(pixel);
+      map.getTarget().style.cursor = hit ? 'pointer' : '';
     });
 
   </script>
